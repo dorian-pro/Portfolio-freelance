@@ -1,0 +1,198 @@
+/*
+*
+*
+* AJOUTER LA VERSION ETC...
+*
+*
+*/
+
+
+// Instalation des fonts
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ledger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+// Variable Fonts
+$fontPlayfair: 'Playfair Display', serif;
+$fontAlice: 'Alice', serif;
+$fontLedger: 'Ledger', serif;
+
+// Variable Colors
+$brownDark: #3D1400;
+$brown: #865934;
+$gradBrown: linear-gradient(180deg, $brown 0%, $brownDark 100%);
+$white: #FFF;
+$black: #000;
+
+// Variable Font-size
+$font: 16px;
+$fontTitleHome: 106px;
+$fontHomeTablette: 66px;
+$fontHome: 56px;
+$fontTitle: 36px;
+$fontSubTitle: 24px;
+$fontText: 22px;
+
+// Variable Font Weight
+$fontMedium: 500;
+$fontSemiBold: 600;
+$fontBold: 700;
+
+
+// variable icon
+$width-icon: 30px;
+$height-icon: 30px;
+
+
+// Reset
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:focus,
+:active {
+    border: 0;
+    outline: 0;
+}
+
+button,
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    font-family: $fontLedger;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+// Style Global
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+p {
+    font-family: $fontAlice;
+}
+
+button{
+    font-family: $fontLedger;
+}
+
+.d-none{
+    display: none;
+}
+
+.pills {
+    display: flex;
+    padding: 12px 18px 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 30px;
+    font-family: $fontLedger;
+    background: $gradBrown;
+    box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.25), 0px 4px 20px 0px rgba(47, 24, 108, 0.10);
+    backdrop-filter: blur(20px);
+}
+
+.btn-primary {
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    font-family: $fontLedger;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    background: $gradBrown;
+    box-shadow: 0px 8px 16px 0px rgba(96, 97, 112, 0.16), 0px 2px 4px 0px rgba(40, 41, 61, 0.04);
+    color: $white;
+    cursor: pointer;
+}
+
+.btn-second {
+    background:
+        $gradBrown border-box;
+    color: $white;
+    padding: 16px 24px;
+    border: 5px solid transparent;
+    border-radius: 8px;
+    display: inline-block;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0px 8px 16px 0px rgba(96, 97, 112, 0.46), 0px 2px 4px 0px rgba(40, 41, 61, 0.15);
+
+    &:hover {
+        background:
+            linear-gradient(#fff, #fff) padding-box,
+            $gradBrown border-box;
+        color: $brownDark;
+        padding: 16px 24px;
+        border: 5px solid transparent;
+        border-radius: 8px;
+        display: inline-block;
+        transition: all 300ms ease-in-out;
+        box-shadow: 0;
+    }
+}
+
+.btn-outline {
+    background:
+            linear-gradient(#fff, #fff) padding-box,
+            $gradBrown border-box;
+        color: $brownDark;
+        padding: 16px 24px;
+        border: 5px solid transparent;
+        border-radius: 8px;
+        display: inline-block;
+        transition: all 300ms ease-in-out;
+        box-shadow: 0;
+
+        &:hover{
+            background:
+                    $gradBrown border-box;
+                color: $white;
+                padding: 16px 24px;
+                border: 5px solid transparent;
+                border-radius: 8px;
+                display: inline-block;
+                transition: all 300ms ease-in-out;
+                box-shadow: 0px 8px 16px 0px rgba(96, 97, 112, 0.46), 0px 2px 4px 0px rgba(40, 41, 61, 0.15);
+        }
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link {
+    color: $white;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+h3, h2, h1{
+    font-family: $fontPlayfair;
+}
